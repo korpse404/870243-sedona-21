@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Королев](https://up.htmlacademy.ru/adaptive/21/user/870243).
-* Наставник: `Неизвестно`.
+* Наставник: `Байдаров Денис`.
 
 ---
 
