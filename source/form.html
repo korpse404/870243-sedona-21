@@ -12,7 +12,7 @@
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-navigation-wrapper">
+        <div class="main-navigation_wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
@@ -26,7 +26,7 @@
     <main class="page-form">
       <section class="form">
         <h1 class="visually-hidden">Форма отзыва</h1>
-        <div class="form-wrapper">
+        <div class="form_wrapper">
           <div class="form__intro text-block">
             <h2 class="text-block__title">Оставьте свой отзыв</h2>
             <p class="text-block__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -34,32 +34,31 @@
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="form-group">
               <legend class="form-group__title">Представьтесь:</legend>
-              <p class="form-group__first-name">
-                <input class="form-group__input form-group__input--text-field" type="text" name="first-name" id="name-first-name" placeholder="Петр">
-                <label class="form-group__label form-group__label--text-name" for="name-first-name">Имя:</label>
+              <p class="form-group__textfield">
+                <input class="form-group__input" type="text" name="first-name" id="name-first-name" placeholder="Петр">
+                <label class="form-group__textlabel" for="name-first-name">Имя:</label>
               </p>
-              <p class="form-group__last-name">
-                <input class="form-group__input form-group__input--text-field" type="text" name="last-name" id="name-last-name" placeholder="Иванов">
-                <label class="form-group__label form-group__label--text-name" for="name-last-name">Фамилия:</label>
+              <p class="form-group___textfield">
+                <input class="form-group__input" type="text" name="last-name" id="name-last-name" placeholder="Иванов">
+                <label class="form-group__textlabel" for="name-last-name">Фамилия:</label>
               </p>
-              <p class="form-group__middle-name">
-                <input class="form-group__input form-group__input--text-field" type="text" name="middle-name" id="name-middle-name" placeholder="Александрович">
-                <label class="form-group__label form-group__label--text-name" for="name-middle-name">Отчество:</label>
+              <p class="form-group___textfield">
+                <input class="form-group__input" type="text" name="middle-name" id="name-middle-name" placeholder="Александрович">
+                <label class="form-group__textlabel" for="name-middle-name">Отчество:</label>
               </p>
-              </ul>
             </fieldset>
 
             <fieldset class="form-group">
               <legend class="form-group__title">Контактная информация:</legend>
-              <p class="form-group__phone">
-                <input class="form-group__input form-group__input--text-field" type="text" name="phone" id="contacts-input" placeholder="Введите телефон" required>
-                <button class="form-group__button form-group__button--phone" type="tel"></button>
-                <label class="form-group__label form-group__label--text-name" for="contacts-input">Контактный телефон*:</label>
+              <p class="form-group___textfield">
+                <input class="form-group__input" type="text" name="phone" id="contacts-input" placeholder="Введите телефон" required>
+                <button class="form-group__button form-group__button--phone" type="button"></button>
+                <label class="form-group__textlabel" for="contacts-input">Контактный телефон*:</label>
               </p>
-              <p class="form-group__email">
-                <input class="form-group__input form-group__input--text-field" type="text" name="email" id="contacts-email" placeholder="Введите e-mail" required>
-                <button class="form-group__email-button" type="email"></button>
-                <label class="form-group__label form-group__label--text-name" for="contacts-email">Электронная почта*:</label>
+              <p class="form-group__textfield">
+                <input class="form-group__input" type="text" name="email" id="contacts-email" placeholder="Введите e-mail" required>
+                <button class="form-group__button form-group__button--email" type="button"></button>
+                <label class="form-group__textlabel" for="contacts-email">Электронная почта*:</label>
               </p>
             </fieldset>
 
@@ -67,16 +66,16 @@
               <legend class="form-group__title">Ваше общее впечатление:</legend>
               <ul class="form-group__list">
                 <li class="form-group__item">
-                  <input class="form-group__input form-group__input--radio form-group__input--radio-checked" type="radio" name="overall" value="good" id="overall-good" checked>
-                  <label class="form-group__label form-group__label--radio-name" for="overall-good">Скорее положительное</label>
+                  <input class="form-group__input form-group__input--radio" type="radio" name="overall" value="good" id="overall-good" checked>
+                  <label class="form-group__textlabel" for="overall-good">Скорее положительное</label>
                 </li>
                 <li class="form-group__item">
                   <input class="form-group__input form-group__input--radio" type="radio" name="overall" value="bad" id="overall-bad">
-                  <label class="form-group__label form-group__label--radio-name" for="overall-bad">Скорее отрицательное</label>
+                  <label class="form-group__textlabel" for="overall-bad">Скорее отрицательное</label>
                 </li>
                 <li class="form-group__item">
                   <input class="form-group__input form-group__input--radio" type="radio" name="overall" value="none" id="overall-none">
-                  <label class="form-group__label form-group__label--radio-name" for="overall-none">Затрудняюсь ответить</label>
+                  <label class="form-group__textlabel" for="overall-none">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
@@ -85,27 +84,27 @@
               <legend class="form-group__title">Посещенные достопримечательности:</legend>
               <ul class="form-group__list">
                 <li class="form-group__item">
-                  <input class="form-group__input form-group__input--checkbox form-group__input--checkbox-checked" type="checkbox" name="bridge" id="visited-bridge" checked>
-                  <label class="form-group__label form-group__label--checkbox-name" for="visited-bridge">Мост Дьявола</label>
+                  <input class="form-group__input form-group__input--checkbox" type="checkbox" name="bridge" id="visited-bridge" checked>
+                  <label class="form-group__textlabel" for="visited-bridge">Мост Дьявола</label>
                 </li>
                 <li class="form-group__item">
-                  <input class="form-group__input form-group__input--checkbox form-group__input--checkbox-checked" type="checkbox" name="mountain" id="visited-mountain" checked>
-                  <label class="form-group__label form-group__label--checkbox-name" for="visited-mountain">Гора-Колокол</label>
+                  <input class="form-group__input form-group__input--checkbox" type="checkbox" name="mountain" id="visited-mountain" checked>
+                  <label class="form-group__textlabel" for="visited-mountain">Гора-Колокол</label>
                 </li>
                 <li class="form-group__item">
-                  <input class="form-group__input form-group__input--checkbox form-group__input--checkbox-checked" type="checkbox" name="park" id="visited-park" checked>
-                  <label class="form-group__label form-group__label--checkbox-name" for="visited-park">Слайд-парк</label>
+                  <input class="form-group__input form-group__input--checkbox" type="checkbox" name="park" id="visited-park" checked>
+                  <label class="form-group__textlabel" for="visited-park">Слайд-парк</label>
                 </li>
                 <li class="form-group__item">
                   <input class="form-group__input form-group__input--checkbox" type="checkbox" name="redcliffs" id="visited-redcliffs">
-                  <label class="form-group__label form-group__label--checkbox-name" for="visited-redcliffs">Красные скалы</label>
+                  <label class="form-group__textlabel" for="visited-redcliffs">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form-group">
               <legend class="form-group__title">Опишите свои эмоции:</legend>
-                <textarea class="form-group__textarea" name="anytext" id="emotions-text" rows="6" cols="30">Опишите подробно все свои восторги</textarea>
+                <textarea class="form-group__input form-group__input--textarea" name="anytext" id="emotions-text" rows="6" cols="30">Опишите подробно все свои восторги</textarea>
             </fieldset>
 
             <button class="form__button" type="submit" name="button">Отправить отзыв</button>
@@ -117,7 +116,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer-wrapper">
+      <div class="page-footer_wrapper">
         <section class="order-page">
           <h3 class="order-page__title">Заинтересовались?</h3>
           <p class="order-page__description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
