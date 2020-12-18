@@ -4,9 +4,101 @@
     <meta charset="utf-8">
     <title>Седона - каталог</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com/187x96" width="187" height="96" alt="Логотип Седона">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a>Фото и видео</a></li>
+            <li class="site-list__item "><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="#">Htmlacademy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-catalog">
+      <section class="catalog">
+        <h1 class="visually-hidden">Каталог</h1>
+        <div class="catalog__wrapper">
+          <div class="catalog__intro text-block">
+            <h2 class="text-block__title">Фото и видео</h2>
+            <p class="text-block__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <article class="catalog-card">
+                <img class="catalog-card__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Уходящая вдаль дорога на закате">
+                <h3 class="catalog-card__title">Неродные просторы</h3>
+                <cite class="catalog-card__author">Автор фото: Борис</cite>
+                <a class="catalog-card__likes" href="#" ></a>
+                <p class="catalog-card__likes-display">1350</p>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="catalog-card">
+                <img class="catalog-card__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Растительность на фоне скал">
+                <h3 class="catalog-card__title">Местная растительность</h3>
+                <cite class="catalog-card__author">Автор фото: Сергей</cite>
+                <a class="catalog-card__likes" href="#" ></a>
+                <p class="catalog-card__likes-display">143</p>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="catalog-card">
+                <img class="catalog-card__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Горная дорога в окружении леса">
+                <h3 class="catalog-card__title">Дорога на север</h3>
+                <cite class="catalog-card__author">Автор фото: Петр</cite>
+                <a class="catalog-card__likes" href="#" ></a>
+                <p class="catalog-card__likes-display">96</p>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="catalog-card">
+                <img class="catalog-card__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Каменный мост через ущелье">
+                <h3 class="catalog-card__title">Мост Дьявола</h3>
+                <cite class="catalog-card__author">Автор фото: Антон</cite>
+                <a class="catalog-card__likes" href="#" ></a>
+                <p class="catalog-card__likes-display">254</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video-block">
+        <div class="video-block__wrapper">
+          <div class="video-block__text-block text-block">
+            <h2 class="text-block__title">Все еще сомневаетесь?</h2>
+            <p class="text-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <img class="video-block__video" src="https://via.placeholder.com/320x201" width="320" height="201" alt="Видеопрезентация">
+        </div>
+      </section>
+    </main>
 
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="order-page">
+          <h3 class="order-page__title">Заинтересовались?</h3>
+          <p class="order-page__description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="order-page__button" type="submit">Найти гостиницу</button>
+        </section>
+        <img class="footer-map" src="https://via.placeholder.com/768x350" width="768" height="350" alt="Карта местонахождения Седоны">
+        <section class="footer-social">
+          <h2 class="footer-social__title">#visitsedona</h2>
+          <ul class="footer-social__list">
+            <li class="footer-social__item"><a href="#">Twitter</a></li>
+            <li class="footer-social__item"><a href="#">Facebook</a></li>
+            <li class="footer-social__item"><a href="#">YouTube</a></li>
+          </ul>
+          <p class="footer-social__copyright"><a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a></p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
